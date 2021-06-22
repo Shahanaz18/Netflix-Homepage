@@ -154,11 +154,13 @@ img {
 .box input[type="submit"]:hover {
   background: #f50713;
 }
-.container-one {
+.container-one,
+.container-two {
   width: 100%;
   position: relative;
 }
-.container-one .contents {
+.container-one .contents,
+.container-two .contents {
   display: flex;
   flex-direction: row;
   max-width: 100%;
@@ -167,24 +169,29 @@ img {
   padding: 40px 45px;
   justify-content: space-between;
 }
-.container-one .contents .text {
+.container-one .contents .text,
+.container-two .contents .text {
   width: 52%;
   height: 100%;
   flex: 0 1 auto;
   padding: 0 3rem 0 0;
   z-index: 3;
 }
-.container-one .contents .text h1 {
+.container-one .contents .text h1,
+.container-two .contents .text h1 {
   font-size: 50px;
 }
-.container-one .contents .text p {
+.container-one .contents .text p,
+.container-two .contents .text p {
   font-size: 26px;
 }
-.container-one .contents .image {
+.container-one .contents .image,
+.container-two .contents .image {
   position: relative;
   z-index: 2;
 }
-.container-one .contents .image img {
+.container-one .contents .image img,
+.container-two .contents .image img {
   max-width: 100%;
   height: auto;
   border: 0;
@@ -335,13 +342,23 @@ center {
     padding: 40px 0;
     text-align: center;
   }
-  .container-one .contents .text {
+  .container-two .contents {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column-reverse;
+    padding: 40px 0;
+    text-align: center;
+  }
+  .container-one .contents .text,
+  .container-two .contents .text {
     padding: 0;
   }
-  .container-one .contents .text h1 {
+  .container-one .contents .text h1,
+  .container-two .contents .text h1 {
     width: 100%;
   }
-  .container-one .contents .text p {
+  .container-one .contents .text p,
+  .container-two .contents .text p {
     width: 100%;
   }
 }
@@ -361,10 +378,12 @@ center {
   }
 }
 @media (max-width: 600px) {
-  .container-one .contents .text h1 {
+  .container-one .contents .text h1,
+  .container-two .contents .text h1 {
     font-size: 30px;
   }
-  .container-one .contents .text p {
+  .container-one .contents .text p,
+  .container-two .contents .text p {
     font-size: 20px;
   }
   .box input[type="text"] {
@@ -379,7 +398,8 @@ center {
   }
 }
 @media (max-width: 412px) {
-  .container-one .contents {
+  .container-one .contents,
+  .container-two .contents {
     padding-top: 40px;
     padding-bottom: 0;
     margin-top: 0;
