@@ -10,7 +10,6 @@
 - Compatible with all devices of different screen sizes and with a beautiful and pleasant user interface.
 
 
-
 ![netflix-website](images/preview.png)
 
 I don't own the photos used in this site. Netflix Company has all images right reserved
